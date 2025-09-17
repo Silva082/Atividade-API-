@@ -97,7 +97,6 @@ h1 {
   color: #d0dbe9;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
   .controls {
     flex-direction: column;
