@@ -8,17 +8,14 @@ const btnPrev = document.getElementById("btnPrev");
 const btnNext = document.getElementById("btnNext");
 const displayArea = document.getElementById("displayArea");
 
-// Define a data máxima permitida no input (hoje)
 const today = new Date();
 dateInput.max = today.toISOString().slice(0, 10);
 dateInput.value = dateInput.max; // Começa no dia atual
 
-// Função para formatar data no formato YYYY-MM-DD
 function formatDate(date) {
   return date.toISOString().slice(0, 10);
 }
 
-// Carrega os dados da NASA para uma data específica
 async function loadAPOD(date) {
   displayArea.style.opacity = 0.5;
   displayArea.innerHTML = "<p>Carregando...</p>";
